@@ -1,0 +1,101 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/Images/Facebook.png": {
+    "file": "assets/Facebook-d5ba5ae3.png",
+    "src": "resources/js/Images/Facebook.png"
+  },
+  "resources/js/Images/Instagram.png": {
+    "file": "assets/Instagram-f294ef76.png",
+    "src": "resources/js/Images/Instagram.png"
+  },
+  "resources/js/Images/ball.png": {
+    "file": "assets/ball-40de899c.png",
+    "src": "resources/js/Images/ball.png"
+  },
+  "resources/js/Images/bilding/building2.jpeg": {
+    "file": "assets/building2-d297b463.jpeg",
+    "src": "resources/js/Images/bilding/building2.jpeg"
+  },
+  "resources/js/Images/bilding/building3.jpg": {
+    "file": "assets/building3-f083c738.jpg",
+    "src": "resources/js/Images/bilding/building3.jpg"
+  },
+  "resources/js/Images/bilding/building4.jpg": {
+    "file": "assets/building4-fa47f1e8.jpg",
+    "src": "resources/js/Images/bilding/building4.jpg"
+  },
+  "resources/js/Images/bilding/building5.jpg": {
+    "file": "assets/building5-5cc303c7.jpg",
+    "src": "resources/js/Images/bilding/building5.jpg"
+  },
+  "resources/js/Images/bilding/building6.jpg": {
+    "file": "assets/building6-4551fec0.jpg",
+    "src": "resources/js/Images/bilding/building6.jpg"
+  },
+  "resources/js/Images/bilding/building7.jpg": {
+    "file": "assets/building7-61a22790.jpg",
+    "src": "resources/js/Images/bilding/building7.jpg"
+  },
+  "resources/js/Images/construction.jpg": {
+    "file": "assets/construction-7902eba2.jpg",
+    "src": "resources/js/Images/construction.jpg"
+  },
+  "resources/js/Images/geotop.jpg": {
+    "file": "assets/geotop-d5d7f98a.jpg",
+    "src": "resources/js/Images/geotop.jpg"
+  },
+  "resources/js/Images/house.png": {
+    "file": "assets/house-e6e60c3f.png",
+    "src": "resources/js/Images/house.png"
+  },
+  "resources/js/Images/logoFront.jpg": {
+    "file": "assets/logoFront-65198d49.jpg",
+    "src": "resources/js/Images/logoFront.jpg"
+  },
+  "resources/js/Images/poster.jpg": {
+    "file": "assets/poster-5991ef3f.jpg",
+    "src": "resources/js/Images/poster.jpg"
+  },
+  "resources/js/Images/viber.png": {
+    "file": "assets/viber-55023ec6.png",
+    "src": "resources/js/Images/viber.png"
+  },
+  "resources/js/Images/whatsapp.png": {
+    "file": "assets/whatsapp-54a1fc33.png",
+    "src": "resources/js/Images/whatsapp.png"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-49097a6e.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.jsx": {
+    "assets": [
+      "assets/geotop-d5d7f98a.jpg",
+      "assets/logoFront-65198d49.jpg",
+      "assets/building5-5cc303c7.jpg",
+      "assets/building4-fa47f1e8.jpg",
+      "assets/building6-4551fec0.jpg",
+      "assets/building7-61a22790.jpg",
+      "assets/house-e6e60c3f.png",
+      "assets/building2-d297b463.jpeg",
+      "assets/building3-f083c738.jpg",
+      "assets/viber-55023ec6.png",
+      "assets/whatsapp-54a1fc33.png",
+      "assets/ball-40de899c.png",
+      "assets/Facebook-d5ba5ae3.png",
+      "assets/Instagram-f294ef76.png",
+      "assets/poster-5991ef3f.jpg",
+      "assets/construction-7902eba2.jpg"
+    ],
+    "css": [
+      "assets/app-49097a6e.css"
+    ],
+    "file": "assets/app-102717d8.js",
+    "isEntry": true,
+    "src": "resources/js/app.jsx"
+  }
+}
