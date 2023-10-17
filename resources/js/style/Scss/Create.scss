@@ -1,0 +1,130 @@
+@import '../colors.css';
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .Logout {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 30px auto;
+
+        button {
+            padding: 10px 25px;
+            background: var(--pagination-active-background);
+            color: var(--background-white);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 20px;
+
+            &:hover {
+                background-color: var(--background-white);
+            }
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+
+
+        .form-input {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid var(--delete-modal-border);
+            border-radius: 5px;
+            font-size: 16px;
+
+            &:focus {
+                outline: none;
+                border-color: var(--pagination-active-background);
+            }
+        }
+
+        button {
+            background-color: var(--pagination-active-background);
+            color: var(--button-text-color);
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--hover-blue);
+            }
+        }
+
+        .photo-block {
+            background: var(--background-white);
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid var(--delete-modal-border);
+            border-radius: 5px;
+            font-size: 16px;
+            height: 120px;
+            cursor: pointer;
+
+            .cloudinary-button {
+                display: none;
+            }
+
+            .uploaded-images {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+
+
+                .control-images {
+                    position: relative;
+
+                    .delete-img {
+                        position: absolute;
+                        bottom: 45px;
+                        left: 45px;
+                        width: 10px;
+                        height: 10px;
+                        font-size: 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: var(--red);
+                        cursor: pointer;
+                        border-radius: 50%;
+                        color: var(--text-light);
+                        font-weight: bold;
+
+
+                        &:hover {
+                            background: var(--hover-blue);
+                        }
+                    }
+                }
+
+
+                input {
+                    color: var(--text-dark);
+                }
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin: 10px;
+            }
+        }
+
+
+        #uw-glamor-5339 .css-eplj4k, #uw-glamor-5339 [data-css-eplj4k] {
+            width: 550px !important;
+            height: 500px;
+        }
+    }
+}

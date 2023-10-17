@@ -1,0 +1,163 @@
+@import '../colors.css';
+.house {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.house .info__title {
+  width: 80%;
+  margin: 20px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.house .info__title .mont-block {
+  color: var(--text-dark);
+  font-family: system-ui;
+  text-decoration: none;
+  padding: 10px;
+}
+.house .info__title .mont-block .mont {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: var(--info-color);
+}
+.house .info__title .streetInfo {
+  padding: 10px;
+  margin: 0 10px;
+  color: var(--text-colors);
+  font-size: 18px;
+}
+.house .info__title .streetInfo .street {
+  font-size: 27px;
+  font-family: system-ui;
+  line-height: 37px;
+  color: var(--heading-color);
+}
+.house .block {
+  display: flex;
+  margin: 20px 10%;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+}
+.house .block .gallery__oboy {
+  width: 80%;
+  margin: 0 7.5%;
+}
+.house .block .gallery__oboy img {
+  width: 100%;
+  border-radius: 5px;
+}
+.house .block .gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 20px 7.5%;
+  width: 80%;
+  overflow-x: auto;
+}
+.house .block .gallery::-webkit-scrollbar {
+  width: 5px;
+  height: 12px;
+  border-radius: 5px;
+}
+.house .block .gallery::-webkit-scrollbar-thumb {
+  background-color: var(--text-color-ld);
+  border-radius: 3px;
+}
+.house .block .gallery .gallery__item {
+  cursor: pointer;
+  padding: 4px 5px 0 5px;
+  opacity: 0.5;
+}
+.house .block .gallery .gallery__item img {
+  width: 100%;
+  height: 100%;
+  min-width: 150px;
+  max-height: 100px;
+  border-radius: 5px;
+}
+.house .block .gallery .gallery__item.selected {
+  opacity: 1;
+}
+.house .information__block {
+  width: 80%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.house .information__block .house__info {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: var(--background-white);
+  box-shadow: 0 0 12px var(--text-col);
+  border-radius: 5px;
+  padding: 40px;
+  margin: 20px 0;
+}
+.house .information__block .house__info .salesData {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin: 15px 5px;
+  width: 13em;
+  height: 5em;
+}
+.house .information__block .house__info .salesData .col {
+  margin: 3px 7px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-colors);
+  font-family: system-ui;
+  font-weight: 500;
+  display: inline-block;
+}
+.house .information__block .house__info .salesData a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: system-ui;
+  font-weight: 500;
+  margin-left: -7px;
+  color: var(--text-colors);
+}
+.house .information__block .house__info .salesData a .logo-tel {
+  width: 35px;
+  text-decoration: none;
+  border-radius: 25%;
+  margin: 5px;
+}
+.house .information__block .description {
+  background: var(--background-white);
+  box-shadow: 0 0 12px var(--text-col);
+  border-radius: 5px;
+  padding: 40px;
+  margin: 20px 0;
+}
+.house .information__block .description span {
+  font-family: system-ui;
+}
+
+@media (max-width: 40.625em) {
+  .house .block {
+    width: 100%;
+  }
+  .house .information__block .house__info .salesData span .col {
+    font-size: 14px;
+  }
+  .house .info__title .streetInfo {
+    font-size: 14px;
+  }
+  .house .info__title .streetInfo .street {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=House.css.map */

@@ -1,0 +1,245 @@
+@import '../colors.css';
+.container-list .page_title_box {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.container-list .page_title_box h1 {
+  font-family: sans-serif;
+  color: var(--primary-color);
+}
+.container-list .btn-header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.container-list .btn-header .create_link {
+  margin-left: 2.5%;
+}
+.container-list .btn-header .create_link button {
+  width: 141px;
+  height: 40px;
+  background-color: var(--primary-color);
+  background-image: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border: 0 var(--delete-modal-title-color);
+  padding: 9px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--button-text-color);
+  text-align: center;
+}
+.container-list .btn-header .create_link button:hover {
+  background-image: linear-gradient(90deg, var(--primary-color), var(--button-hover-color) 60%);
+}
+.container-list .btn-header .create_link .input {
+  border: 2px solid var(--primary-color);
+  margin-left: 30px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.container-list .btn-header .logout {
+  position: absolute;
+  margin-right: 50px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: none;
+  background: var(--primary-color);
+  color: var(--button-text-color);
+  right: 0;
+  bottom: 60px;
+  cursor: pointer;
+}
+.container-list .table {
+  display: flex;
+  margin: 2% 20px;
+  flex-direction: column;
+  width: 97%;
+  height: 100%;
+}
+.container-list .table .title {
+  display: flex;
+  height: 50px;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.container-list .table .title div {
+  width: 110px;
+  max-width: 25%;
+  height: 40px;
+  border: 0.5px solid var(--primary-color);
+  padding: 10px 0 0 10px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.container-list .table .employees_block {
+  display: flex;
+  flex-direction: column;
+}
+.container-list .table .employees_block .employees_info {
+  display: flex;
+}
+.container-list .table .employees_block .employees_info .images {
+  width: 110px;
+  max-width: 25%;
+  border: 0.5px solid var(--primary-color);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+.container-list .table .employees_block .employees_info .images::-webkit-scrollbar {
+  width: 5px;
+}
+.container-list .table .employees_block .employees_info .images::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+.container-list .table .employees_block .employees_info .images img {
+  width: 40%;
+  height: 40px;
+  margin: 5px;
+}
+.container-list .table .employees_block .employees_info .link_Employees {
+  width: 25%;
+  height: 40px;
+  border: 0.5px solid var(--primary-color);
+  padding: 10px 0 0 10px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+.container-list .table .employees_block .employees_info div {
+  width: 110px;
+  max-width: 25%;
+  height: auto;
+  border: 0.5px solid var(--primary-color);
+  padding: 10px 0 0 10px;
+  font-family: sans-serif;
+}
+.container-list .table .employees_block .employees_info .Btn {
+  display: flex;
+  padding: 10px 0 0 10px;
+}
+.container-list .table .employees_block .employees_info .Btn .EditButton {
+  color: var(--edit-button-color);
+  background: var(--button-text-color);
+  border: 0 var(--delete-modal-title-color);
+  font-size: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.container-list .table .employees_block .employees_info .Btn .EditButton:hover {
+  background-image: linear-gradient(90deg, var(--primary--button-text-color-color), var(--button-text-color) 60%);
+}
+.container-list .table .employees_block .employees_info .Btn .DeleteButton {
+  color: var(--red);
+  background: var(--button-text-color);
+  border: 0 var(--delete-modal-title-color);
+  font-size: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.container-list .table .employees_block .employees_info .Btn .DeleteButton:hover {
+  background-image: linear-gradient(90deg, var(--primary--button-text-color-color), var(--button-text-color) 60%);
+}
+.container-list .pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.container-list .pagination .page-item {
+  margin: 0 5px;
+}
+.container-list .pagination .page-link {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 1px solid var(--delete-modal-border);
+  border-radius: 4px;
+  background-color: var(--button-text-color);
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.container-list .pagination .page-link:hover {
+  background-color: var(--pagination-link-hover-color);
+}
+.container-list .pagination .page-link .active {
+  background-color: var(--pagination-active-background);
+  color: var(--pagination-active-color);
+}
+.container-list .pagination .page-link[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: var(--pagination-disabled-background);
+  color: var(--pagination-disabled-color);
+}
+.container-list .pagination .page-item {
+  margin: 0 5px;
+}
+.container-list .pagination .page-item:first-child .page-link {
+  border-radius: 50% !important;
+}
+.container-list .pagination .page-item:last-child .page-link {
+  border-radius: 50% !important;
+}
+.container-list .pagination .page-item a {
+  border-radius: 50%;
+}
+.container-list .active .page-link {
+  background: var(--primary-color) !important;
+  color: var(--button-text-color);
+}
+
+.delete-modal {
+  background-color: var(--button-text-color);
+  border: 1px solid var(--delete-modal-border);
+  border-radius: 4px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.delete-modal .modal-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.delete-modal .modal-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.delete-modal .modal-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.delete-modal .modal-buttons .cancel-button,
+.delete-modal .modal-buttons .delete-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.delete-modal .modal-buttons .cancel-button {
+  background-color: var(--delete-modal-border);
+  color: #333;
+}
+.delete-modal .modal-buttons .delete-button {
+  background-color: var(--delete-modal-delete-button-background);
+  color: var(--button-text-color);
+}
+
+/*# sourceMappingURL=ResponsiveTable.css.map */

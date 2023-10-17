@@ -1,0 +1,237 @@
+@import '../colors.css';
+
+.Apartments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10%;
+    width: 80%;
+    min-height: 75vh;
+
+    .apartmentBlock {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5% 0;
+
+        button {
+            color: var(--button-text-color);
+            width: 10em;
+            letter-spacing: -.5px;
+            background-color: var(--primary-colors);
+            background-image: linear-gradient(var(--primary-colors), var(--secondary-colors)); /* Fix the linear-gradient syntax */
+            border-radius: 5px;
+            padding: 14px 15px;
+            font-size: 17px;
+            line-height: 24px;
+            border: none;
+            margin: 0 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-image: linear-gradient(180deg, var(--secondary-colors), var(--primary-colors) 56%); /* Fix the linear-gradient syntax */
+                box-shadow: inset 0 200px 200px 200px var(--button-box-shadow-color);
+            }
+
+            /* Correct the :active pseudo-class */
+            &:active {
+                background: #3dd01e;
+            }
+        }
+
+    }
+
+    .lineBlock {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 96%;
+        margin: 1em 0 2em;
+
+        .line {
+            width: 48%;
+            height: 0;
+            border: 1px solid var(--background-color);
+        }
+
+        .house {
+            width: 4em;
+            border-radius: 10%;
+        }
+    }
+
+    .card {
+        width: 96%;
+        padding: 20px;
+        border-radius: 12px;
+        border: 2px solid var(--button-box-shadow-color);
+        margin: 1.5rem 0;
+
+        .card_smol {
+            display: flex;
+            margin-right: -15px;
+            margin-left: -15px;
+            flex-direction: row;
+            align-items: center;
+
+            .photoSlider {
+                position: relative;
+
+                .photo {
+                    width: 20em;
+                    height: 200px;
+                    z-index: 999;
+                    opacity: 1;
+                    border: 1px solid var(--button-box-shadow-color);
+                    border-radius: 12px;
+                    margin: 0 10px;
+                }
+            }
+
+            .streetInfo {
+                padding: 10px;
+                margin: 0 10px;
+                color: var(--text-colors);
+                font-size: 14px;
+
+                .street {
+                    font-size: 22px;
+                    font-family: system-ui;
+                    line-height: 37px;
+                    color: var(--heading-color);
+                }
+            }
+
+            .infoBlock {
+                display: flex;
+
+                .salesData {
+                    width: 13em;
+                    height: 8em;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 10px;
+                    margin: 0 10px;
+
+                    .link {
+                        border-radius: 10px;
+                        padding: 8px 20px;
+                        background: var(--link-background);
+                        color: var(--text-dark);
+                        font-family: system-ui;
+                        text-decoration: none;
+                        margin-top: 5px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: var(--text-colors);
+                        font-family: system-ui;
+                        margin: 5px 0;
+
+                        .mont {
+                            font-size: 16px;
+                            font-weight: bold;
+                            line-height: 20px;
+                            color: var(--info-color);
+                        }
+
+                        .rentCode {
+                            font-weight: bold;
+                            color: var(--link-background);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 71.875em) {
+    .Apartments {
+        .card {
+            width: 96%;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid var(--button-box-shadow-color);
+            margin: 1.5rem -10px;
+
+            .card_smol {
+                display: flex;
+                margin-right: -15px;
+                margin-left: -15px;
+                flex-direction: row;
+                align-items: center;
+
+                .streetInfo {
+                    padding-bottom: 0;
+                }
+
+                .infoBlock {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    .salesData {
+                        width: 13em;
+                        height: 6em;
+
+                        span {
+                            margin: 3px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+
+    &:first-child .page-link {
+        border-radius: 50% !important;
+    }
+
+    &:last-child .page-link {
+        border-radius: 50% !important;
+    }
+
+    a {
+        border-radius: 50%;
+    }
+}
+
+.active {
+    .page-link {
+        background: var(--primary-color) !important;
+    }
+}
+
+@media (max-width: 40.625em) {
+    .Apartments {
+        .card {
+            width: 96%;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid var(--button-box-shadow-color);
+            margin: 1.5rem -10px;
+
+            .card_smol {
+                display: flex;
+                margin-right: -15px;
+                margin-left: -15px;
+                flex-direction: column;
+                align-items: center;
+
+                .infoBlock {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+

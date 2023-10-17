@@ -1,0 +1,98 @@
+@import '../colors.css';
+.auto-login {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 1px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-image: var(--background-image);
+}
+.auto-login .login-form {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.auto-login .login-form .login-container {
+  background-color: var(--button-text-color);
+  color: var(--text-color);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow1), var(--box-shadow2), var(--box-shadow3);
+  overflow: hidden;
+  min-width: 300px;
+  margin-top: 4em;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.auto-login .login-form .login-container h2 {
+  margin-bottom: 20px;
+}
+.auto-login .login-form .login-container .lineBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  margin: 1em 0 2em;
+}
+.auto-login .login-form .login-container .lineBlock .line {
+  width: 48%;
+  height: 0;
+  border: 1px solid var(--pagination-active-background);
+}
+.auto-login .login-form .login-container .lineBlock .ball {
+  width: 4em;
+  border-radius: 10%;
+}
+.auto-login .login-form .login-container .form-group {
+  margin-bottom: 10px;
+}
+.auto-login .login-form .login-container .form-group input {
+  width: 100%;
+  padding: 12px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 2px var(--border-color);
+  outline: none;
+}
+.auto-login .login-form .login-container .form-group .error-border {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 2px var(--red);
+}
+.auto-login .login-form .login-container button {
+  background-color: var(--pagination-active-background);
+  color: var(--button-text-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.auto-login .login-form .login-container button:hover {
+  background-color: var(--hover-blue);
+}
+
+/*# sourceMappingURL=Login.css.map */

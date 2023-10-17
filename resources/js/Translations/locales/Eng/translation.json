@@ -1,0 +1,50 @@
+{
+  "measurement": "SURVEYING",
+  "drafting": "PROJECTING",
+  "apartments": "REAL ESTATE",
+  "construction": "CONSTRUCTION",
+  "map": "Armenia, Yerevan Karapet Ulnetsu st., 59/5",
+  "after": "Copyright",
+  "rent": "Rent",
+  "sale": "Sale",
+  "price": "Price",
+  "tel": "Tel.",
+  "room": "Rooms",
+  "area": "Area",
+  "code": "Code",
+  "update": "Update",
+  "building": "Type",
+  "details": "Details",
+  "construction-Projects": "Implementation Of Construction Projects",
+  "title": "GEOTOP GEODETIC AND CADASTRAL WORKS AND DESIGN Limited Liability Company (LLC)",
+  "measurements": {
+    "title1": "Geodesy",
+    "title2": "Cadastral measurement",
+    "title3": "Construction geodesy",
+    "title4": "Determine coordinates",
+    "title5": "Aerial photography",
+    "text1": "Geodesy - the field of relations arising in the process of scientific, technical and industrial activities related to the determination of the shape, dimensions, gravimetric field, coordinates of points of the Earth&#39;s surface.Performed by: - Topographic surveys of different scales,- Determination of site boundaries,- Topographic works, profiling, cartographic works, - Calculation of earthwork volumes (calculation).",
+    "text2": "Measurement is the recording of data on the availability, purpose, ownership, forms of use, their quality and quantity, appearance and types of land plots and buildings and structures attached to them. We carry out measurements of private houses, apartments, buildings of various purposes, structures, land plots. Measuring works are performed: for the purposes of state registration of rights to real estate, for division or merger of real estate objects, to adjust qualitative and quantitative data on real estate objects, to determine the boundaries of unauthorized land plots, determine the legal status and organize the legalization process, to determine the legal status of unauthorized buildings and structures, to determine the legal status and organize the legalization process, for the purposes of cadastral valuation, for the purposes of applying to the court, as well as in other cases established by law or other legal acts.",
+    "text3": "In construction, geodesy can be considered as a set of measurements, calculations that ensure the correct and accurate placement of buildings and structures in nature. Marking of axes in the construction of newly built buildings, any geodetic work necessary for landscaping is carried out.",
+    "text4": "Global Navigation Satellite System (GNSS) is a system that can be used to determine the spatial position of terrain objects. This is provided by equipment (GPS Rover) that receives and processes the signal received from a satellite.",
+    "text5": "Aerial photography carried out by drones significantly accelerates and simplifies topographic surveys. This applies to territory surveying, planning and design of works, as well as construction of roads, buildings and communications."
+  },
+  "constructions": {
+    "title1": "Construction of high-rise buildings",
+    "title2": "Construction of residential buildings",
+    "title3": "Rebuilding and remodeling",
+    "text1": "Organization of construction of multi-family residential, public and industrial buildings.",
+    "text2": "Organization of construction of individual residential houses",
+    "text3": "Organization of works on reconstruction and repair of buildings, structures"
+  },
+  "draftings": {
+    "title1": "PROJECTING",
+    "title2": "PROJECTING",
+    "title3": "PROJECTING",
+    "title4": "PROJECTING",
+    "text1": "Projection of buildings, structures in accordance with all urban planning norms and requirements.",
+    "text2": "Projection of reconstruction and repair of buildings, structures",
+    "text3": "Submission of necessary documents for construction, construction project and construction completion act (operation permit)",
+    "text4": "3D modeling of building structures, allowing to understand in advance the future appearance of the building."
+  }
+}
