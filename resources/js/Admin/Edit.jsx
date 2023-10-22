@@ -129,7 +129,7 @@ const Edit = () => {
                                                         &#9747;
                                                     </button>
                                                     <img
-                                                        src={`http://project.loc/${image.url}`}
+                                                        src={`https://geotop.am/${image.url}`}
                                                         alt={image.index}
                                                     />
                                                 </div>

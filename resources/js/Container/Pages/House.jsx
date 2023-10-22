@@ -45,7 +45,7 @@ const House = () => {
                 </div>
                 <div className="block">
                     <div className="gallery__oboy" id="galleryOboy">
-                        <img src={`http://project.loc/${selectedImage}`} alt="oboy" />
+                        <img src={`https://geotop.am/${selectedImage}`} alt="oboy" />
                     </div>
                     <div className="gallery">
                         {item.images && item.images.map((image) => (
@@ -54,7 +54,7 @@ const House = () => {
                                 key={image.id}
                                 onClick={() => handleImageChange(image.url)}
                             >
-                                <img src={`http://project.loc/${image.url}`} alt={image.id} />
+                                <img src={`https://geotop.am/${image.url}`} alt={image.id} />
                             </div>
                         ))}
                     </div>
