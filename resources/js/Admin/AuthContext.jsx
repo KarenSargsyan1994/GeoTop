@@ -52,7 +52,7 @@ export const AuthProvider = ({children}) => {
     const getItem = (id) => {
         return axios.get(`/api/items/${id}`).then(({data}) => {
             setItem(data.item)
-            return data
+            return data.item
         })
     };
     const getItems = () => {
@@ -62,7 +62,11 @@ export const AuthProvider = ({children}) => {
         })
     }
     const updateItem = (id,formData) => {
-        return axios.put(`/api/items/${id}`,formData).then(({data}) => {
+        const config = {
+            headers: {'content-type': 'multipart/form-data'}
+        }
+        formData.images = formData.images.filter((image) => image instanceof File);
+        return axios.post(`/api/items/${id}`,{...formData}, config).then(({data}) => {
             setItems(data.items)
             return data
         })
@@ -72,9 +76,12 @@ export const AuthProvider = ({children}) => {
         getItems();
         })
     }
+  const deleteImages = (id) => {
+        return axios.delete(`api/images/${id}`);
+    }
 
     return (
-        <AuthContext.Provider value={{user, login, logout, addItem, getItems, getItem, item, items, updateItem, deleteItem}}>
+        <AuthContext.Provider value={{user, login, logout, addItem, getItems, getItem, item, items, updateItem, deleteItem, deleteImages}}>
             {children}
         </AuthContext.Provider>
     );

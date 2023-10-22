@@ -7,10 +7,12 @@
 .Measurement .photo-block {
   width: 90%;
   margin-top: 2rem;
-}
-.Measurement .photo-block img.logo {
-  width: 100%;
-  height: 25rem;
+  background-image: url("../../Images/logoFront.jpg");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
   border-radius: 0.4rem;
 }
 .Measurement .accordion-container {
@@ -40,7 +42,7 @@
   box-shadow: var(--open-box-shadow-color) 0 4px 12px;
 }
 .Measurement .accordion-container .accordion-item .accordion-content.open {
-  max-height: 500px;
+  max-height: 1000px;
   padding: 20px;
   font-family: system-ui;
 }
@@ -71,6 +73,9 @@
 }
 
 @media (max-width: 56.563em) {
+  .Measurement .photo-block {
+    height: 35vh;
+  }
   .Measurement .map-information .title span {
     font-size: 17px;
   }
@@ -80,6 +85,9 @@
   }
 }
 @media (max-width: 50em) {
+  .Measurement .photo-block {
+    height: 25vh;
+  }
   .Measurement .map-information .title span {
     font-size: 14px;
   }
@@ -89,6 +97,9 @@
   }
 }
 @media (max-width: 42.5em) {
+  .Measurement .photo-block {
+    height: 20vh;
+  }
   .Measurement .map-information {
     flex-direction: column;
     margin-top: 0;

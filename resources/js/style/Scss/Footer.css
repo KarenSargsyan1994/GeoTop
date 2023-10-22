@@ -39,7 +39,12 @@
 .footer .footer-content .footer-info-block a {
   font-size: 14px;
   font-family: system-ui;
+  color: var(--button-text-color);
+  text-decoration: none;
   margin: 5px;
+}
+.footer .footer-content .facebookBlock {
+  display: flex;
 }
 .footer .footer-content .facebookBlock .logo-facebook {
   width: 40px;

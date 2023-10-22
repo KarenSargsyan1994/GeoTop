@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import ymaps from "ymaps";
 import {useTranslation} from "react-i18next";
-import logoFront from '../../Images/logoFront.jpg';
 
 import "../../style/Scss/Measurement.scss";
 
@@ -52,9 +51,7 @@ const Measurement = () => {
     return (
         <div className="Measurement">
 
-            <div className="photo-block">
-                <img className="logo" alt="Logo" src={logoFront}/>
-            </div>
+            <div className="photo-block"></div>
 
             <div className="accordion-container">
                 {measurements && measurements.map((item, index) => (

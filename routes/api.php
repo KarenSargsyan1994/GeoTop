@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\ImageController;
 use app\Http\Controllers\UserController;
 use App\Http\Controllers\Auth\AuthController;
 /*
@@ -27,6 +28,7 @@ Route::get('/items/{id}',[ItemController::class, 'show']);
 Route::group(['middleware' => ['jwt.verify:admin']], function () {
 Route::get('/user', [AuthController::class, 'me']);
 Route::post('/item',[ItemController::class, 'store']);
-Route::put('/items/{id}',[ItemController::class, 'update']);
+Route::post('/items/{id}',[ItemController::class, 'update']);
 Route::delete('/items/{id}',[ItemController::class, 'destroy']);
+Route::delete('/images/{id}',[ImageController::class, 'destroy']);
 });

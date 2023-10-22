@@ -19,8 +19,8 @@ const Footer = () => {
                     <a href="tel:+374-93-005199">&#9743; +374-93-005199</a>
                 </div>
                 <div className="footer-info-block">
-                    <a>&#9993; info@geotop.com</a>
-                    {/*<a href="mailto:info@geotop.com">info@geotop.com</a>*/}
+                    <a>&#9993; info@geotop.am</a>
+                    <a href="mailto:info@geotop.am">info@geotop.am</a>
                     <a>&#9906; {t("map")}</a>
                 </div>
                 <div className="facebookBlock">

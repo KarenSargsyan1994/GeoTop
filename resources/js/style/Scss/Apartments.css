@@ -159,16 +159,20 @@
     margin: 3px 0;
   }
 }
-.pagination .page-item {
+.pagination {
+  margin: 15px 0;
+}
+
+.page-item {
   margin: 0 5px;
 }
-.pagination .page-item:first-child .page-link {
+.page-item:first-child .page-link {
   border-radius: 50% !important;
 }
-.pagination .page-item:last-child .page-link {
+.page-item:last-child .page-link {
   border-radius: 50% !important;
 }
-.pagination .page-item a {
+.page-item a {
   border-radius: 50%;
 }
 

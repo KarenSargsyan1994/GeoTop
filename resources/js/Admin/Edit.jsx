@@ -8,9 +8,9 @@ import '../style/Scss/Create.scss';
 const Edit = () => {
     const {id} = useParams();
     const navigate = useNavigate();
-    const {item, updateItem, getItem} = useAuth();
+    const {item, updateItem, getItem, deleteImages } = useAuth();
 
-    useEffect(() => {
+    useEffect( () => {
         getItem(id);
     }, [id]);
 
@@ -58,8 +58,10 @@ const Edit = () => {
         },
     });
 
-    const handleDeleteImg = (event, index) => {
+    const handleDeleteImg =  (event, index) => {
         event.stopPropagation();
+        const imageIdToDelete = item.images[index].id;
+        deleteImages(imageIdToDelete);
         const newUploadedImages = [...uploadedImages];
         newUploadedImages.splice(index, 1);
         setUploadedImages(newUploadedImages);

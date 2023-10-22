@@ -65,7 +65,6 @@ const List = () => {
     const handleSearch = (event) => {
         setSearchInput(event.target.value);
     };
-    console.log(items)
     return (
         <div className="container-list">
             <div className="page_title_box">
@@ -123,7 +122,7 @@ const List = () => {
                                 <div>{item.building.slice(0, 7)}</div>
                                 <div>{item.code}</div>
                                 <div>{item.date.slice(0, 7)}</div>
-                                <div>{item.phone.slice(0, 7)}</div>
+                                <div>{item.phone}</div>
                                 <div>{item.price}</div>
                                 <div>{item.roomCount}</div>
                                 <div>{item.description.slice(0, 7)}</div>

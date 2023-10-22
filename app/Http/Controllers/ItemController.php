@@ -49,6 +49,7 @@ class ItemController extends Controller
             $validatedData = $request->validate([
 
                 '*' => 'required',
+                'images' => 'nullable',
             ]);
             $item->city = $request->city;
             $item->date = $request->date;
@@ -62,7 +63,6 @@ class ItemController extends Controller
             $item->area = $request->area;
 
             $item->save();
-
             $images = $request->file('images');
 
             if ($images && is_array($images)) {

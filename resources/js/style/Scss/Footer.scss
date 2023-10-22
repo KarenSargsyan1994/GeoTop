@@ -43,11 +43,15 @@
             a {
                 font-size: 14px;
                 font-family: system-ui;
+                color: var(--button-text-color);
+                text-decoration: none;
                 margin: 5px;
             }
         }
 
         .facebookBlock {
+            display: flex;
+
             .logo-facebook {
                 width: 40px;
             }
