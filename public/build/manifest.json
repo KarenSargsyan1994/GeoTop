@@ -40,6 +40,10 @@
     "file": "assets/building7-61a22790.jpg",
     "src": "resources/js/Images/bilding/building7.jpg"
   },
+  "resources/js/Images/constructionn.jpg": {
+    "file": "assets/constructionn-c525db03.jpg",
+    "src": "resources/js/Images/constructionn.jpg"
+  },
   "resources/js/Images/geotop.jpg": {
     "file": "assets/geotop-d5d7f98a.jpg",
     "src": "resources/js/Images/geotop.jpg"
@@ -65,7 +69,7 @@
     "src": "resources/js/Images/whatsapp.png"
   },
   "resources/js/app.css": {
-    "file": "assets/app-f4ea4512.css",
+    "file": "assets/app-401c6d26.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.jsx": {
@@ -84,12 +88,13 @@
       "assets/Facebook-d5ba5ae3.png",
       "assets/Instagram-f294ef76.png",
       "assets/logoFront-65198d49.jpg",
-      "assets/poster-5991ef3f.jpg"
+      "assets/poster-5991ef3f.jpg",
+      "assets/constructionn-c525db03.jpg"
     ],
     "css": [
-      "assets/app-f4ea4512.css"
+      "assets/app-401c6d26.css"
     ],
-    "file": "assets/app-f2352899.js",
+    "file": "assets/app-6d696294.js",
     "isEntry": true,
     "src": "resources/js/app.jsx"
   }

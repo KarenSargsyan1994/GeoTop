@@ -12,7 +12,7 @@ const Apartments = () => {
     const [data, setData] = useState(null);
     const itemsPerPage = 5;
     const [itemOffset, setItemOffset] = useState(0);
-    const [selectedType, setSelectedType] = useState('Rent');
+    const [selectedType, setSelectedType] = useState('Sale');
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -29,7 +29,7 @@ const Apartments = () => {
         if (data) {
             const filteredData = data.filter((house) => house.type === selectedType);
             const newPageCount = Math.ceil(filteredData.length / itemsPerPage);
-            setItemOffset(0); // Reset the offset when type changes
+            setItemOffset(0);
             setPageCount(newPageCount);
         }
     }, [data, selectedType]);
@@ -54,7 +54,7 @@ const Apartments = () => {
     const displayedApartments =
         data && data.filter((house) => house.type === selectedType).slice(itemOffset, itemOffset + itemsPerPage);
 
-    const [pageCount, setPageCount] = useState(0); // State to store page count
+    const [pageCount, setPageCount] = useState(0);
 
     return (
         <div className="Apartments">

@@ -57,10 +57,9 @@ const Create = () => {
             images: uploadedImages,
             type: type,
         };
-        console.log(combinedData)
         await auth.addItem(combinedData);
     };
-    console.log(type)
+
     const handleDeleteImg = (event, index) => {
         event.stopPropagation();
         const newUploadedImages = [...uploadedImages];

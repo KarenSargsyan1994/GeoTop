@@ -18,7 +18,6 @@ const Construction = () => {
         {title: t("constructions.title2"), text: t("constructions.text2"), image: building2},
         {title: t("constructions.title3"), text: t("constructions.text3"), image: building3},
     ];
-    console.log("Title 1:", t("aaa"));
 
     return (
         <div className="Construction">

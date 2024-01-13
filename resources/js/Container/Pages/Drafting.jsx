@@ -16,7 +16,6 @@ const Drafting = () => {
         { title: t("draftings.title3"), text: t("draftings.text3"), image: building1 },
         { title: t("draftings.title4"), text: t("draftings.text4"), image: building7 },
     ];
-    console.log(t("draftings"), ">>>>>>>>>>>>>>>>>>>>>>>>",  t("measurement"))
     return (
         <div className="Drafting">
             <article>
