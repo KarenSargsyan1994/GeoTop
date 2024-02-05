@@ -69,7 +69,7 @@
     "src": "resources/js/Images/whatsapp.png"
   },
   "resources/js/app.css": {
-    "file": "assets/app-401c6d26.css",
+    "file": "assets/app-1e3bc612.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.jsx": {
@@ -92,9 +92,9 @@
       "assets/constructionn-c525db03.jpg"
     ],
     "css": [
-      "assets/app-401c6d26.css"
+      "assets/app-1e3bc612.css"
     ],
-    "file": "assets/app-6d696294.js",
+    "file": "assets/app-dd89a19c.js",
     "isEntry": true,
     "src": "resources/js/app.jsx"
   }

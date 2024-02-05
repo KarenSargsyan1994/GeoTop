@@ -59,8 +59,8 @@ const Apartments = () => {
     return (
         <div className="Apartments">
             <div className="apartmentBlock">
-                <button  onClick={handleRent}>{t('rent')}</button>
-                <button  onClick={handleSale}>{t('sale')}</button>
+                <button onClick={handleRent}>{t('rent')}</button>
+                <button onClick={handleSale}>{t('sale')}</button>
             </div>
             <div className="lineBlock">
                 <div className="line"></div>
@@ -88,11 +88,11 @@ const Apartments = () => {
                                     </div>
                                     <div className="salesData">
                                         <span>{t("code")} : <span className="rentCode">{house.code}</span></span>
-                                        <span>{t("update")} : {house.date}</span>
+                                        <span style={{fontSize: "12px"}}>{t("update")} : {house.date}</span>
                                         <span>{t("building")} : {house.building}</span>
                                     </div>
                                     <div className="salesData">
-                                        <span>{t("price")} : <span className="mont">{house.price}֏</span></span>
+                                        <span>{t("price")} : <span className="mont">{house.price}$</span></span>
                                         <button onClick={() => handleHouse(house.id)} className='link'>
                                             {t("details")} &#10095;
                                         </button>

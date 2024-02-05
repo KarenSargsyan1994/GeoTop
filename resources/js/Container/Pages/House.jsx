@@ -40,7 +40,7 @@ const House = () => {
                         <span><span className="street">{item.street} </span>| {item.city}</span>
                     </div>
                     <div className="mont-block">
-                        <span>{t("price")} : <span className="mont">{item.price} ֏</span></span>
+                        <span>{t("price")} : <span className="mont">{item.price} $</span></span>
                     </div>
                 </div>
                 <div className="block">
@@ -68,7 +68,7 @@ const House = () => {
                         </div>
                         <div className="salesData">
                             <span>{t("code")} : <span className="col">{item.code}</span></span>
-                            <span>{t("update")} : <span className="col">{item.date}</span></span>
+                            <span style={{fontSize: "12px"}}>{t("update")} : <span className="col">{item.date}</span></span>
                             <span>{t("tel")} : <a className="col" href={`tel:${item.phone}`}>{item.phone}</a></span>
                         </div>
                         <div className="salesData">
